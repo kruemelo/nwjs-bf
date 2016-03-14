@@ -77,4 +77,4 @@ const child = spawn(nw)
 
 ## License
 MIT &copy; [EGOIST](https://github.com/egoist)
-MIT &copy; [EGOIST](https://github.com/kruemelo)
+MIT &copy; [kruemelo](https://github.com/kruemelo)

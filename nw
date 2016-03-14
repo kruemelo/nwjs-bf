@@ -32,13 +32,13 @@ cli
   .action(run)
 
 cli
-  .command('install <version>')
+  .command('install <version> [<flavour>]')
   .description('Install an nwjs version')
   .alias('i')
   .action(install)
 
 cli
-  .command('use <version>')
+  .command('use <version> [<flavour>]')
   .description('Set an active nwjs version')
   .alias('u')
   .action(use)
@@ -56,7 +56,7 @@ cli
   .action(listRemote)
 
 cli
-  .command('remove <version>')
+  .command('remove <version> [<flavour>]')
   .description('Remove a specific version of nwjs')
   .alias('r')
   .action(remove)

@@ -1,64 +1,63 @@
 #!/usr/bin/env node
-'use strict'
 
 /**
  * Module dependencies
  */
-const cli = require('commander')
-const update = require('update-notifier')
-const pkg = require('./package')
-require('colorful').toxic()
+const cli = require('commander');
+const update = require('update-notifier');
+const pkg = require('./package');
+require('colorful').toxic();
 
 /**
  * Commands
  */
-const install = require('./lib/install')
-const run = require('./lib/run')
-const use = require('./lib/use')
-const list = require('./lib/list')
-const listRemote = require('./lib/list-remote')
-const remove = require('./lib/remove')
+const install = require('./lib/install');
+const run = require('./lib/run');
+const use = require('./lib/use');
+const list = require('./lib/list');
+const listRemote = require('./lib/list-remote');
+const remove = require('./lib/remove');
 
 /**
  * Update notify
  */
-update({pkg}).notify()
+update({pkg}).notify();
 
-cli.version(pkg.version)
+cli.version(pkg.version);
 
 cli
   .command('*')
   .description('Run nwjs in a directory')
-  .action(run)
+  .action(run);
 
 cli
   .command('install <version> [<flavour>]')
   .description('Install an nwjs version')
   .alias('i')
-  .action(install)
+  .action(install);
 
 cli
   .command('use <version> [<flavour>]')
   .description('Set an active nwjs version')
   .alias('u')
-  .action(use)
+  .action(use);
 
 cli
   .command('list')
   .description('List local cached nwjs versions')
   .alias('ls')
-  .action(list)
+  .action(list);
 
 cli
   .command('list-remote')
   .description('List all available nwjs versions from remote')
   .alias('ls-remote')
-  .action(listRemote)
+  .action(listRemote);
 
 cli
   .command('remove <version> [<flavour>]')
   .description('Remove a specific version of nwjs')
   .alias('r')
-  .action(remove)
+  .action(remove);
 
-cli.parse(process.argv)
+cli.parse(process.argv);

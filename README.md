@@ -13,7 +13,7 @@ npm i -g nwjs-bf
 ```bash
 
 # Install a normal version
-$ nw install 0.13.0-rc2
+$ nw install 0.13.0-rc3
 
 # -or- install SDK flavoured build
 

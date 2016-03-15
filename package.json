@@ -1,6 +1,6 @@
 {
   "name": "nwjs-bf",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "description": "Install SDK/NaCl nw.js prebuilts using npm",
   "main": "index.js",
   "scripts": {
@@ -24,6 +24,9 @@
   "author": "kruemelo",
   "license": "MIT",
   "homepage": "https://github.com/kruemelo/nwjs-bf#readme",
+  "engines": {
+    "node": ">=5.8.0"
+  },
   "dependencies": {
     "child-process-promise": "^1.1.0",
     "co": "^4.6.0",

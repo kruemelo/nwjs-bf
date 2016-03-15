@@ -1,3 +1,1 @@
-'use strict'
-
-module.exports = require('./lib/get-path')()
+module.exports = require('./lib/get-path')();

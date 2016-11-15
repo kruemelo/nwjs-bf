@@ -2,6 +2,9 @@ nwjs-bf forked from [egoist/nwjs](https://github.com/egoist/nwjs)
 
 additional build-flavoured option to install SDK or NaCl versions of [nwjs](http://nwjs.io/downloads/)
 
+# discontinued
+use [egoist/nwjs](https://github.com/egoist/nwjs) instead
+
 # Install
 
 ```bash

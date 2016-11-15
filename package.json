@@ -1,6 +1,6 @@
 {
   "name": "nwjs-bf",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "Install SDK/NaCl nw.js prebuilts using npm",
   "main": "index.js",
   "scripts": {
